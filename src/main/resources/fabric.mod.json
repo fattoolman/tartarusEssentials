@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "TartarusEssentials",
+  "version": "${version}",
+  "name": "TartarusEssentials",
+  "description": "A essentails command for friend server.",
+  "authors": [
+    "fattoolman"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/TartarusEssentials/icon.png",
+  "environment": "server",
+  "entrypoints": {
+    "client": [
+      "com.asisgodtroll.tartarusessentials.tartarusessentials.client.TartarusEssentialsClient"
+    ],
+    "main": [
+      "com.asisgodtroll.tartarusessentials.tartarusessentials.TartarusEssentials"
+    ]
+  },
+  "mixins": [
+    "TartarusEssentials.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.12.8",
+    "fabric": "*",
+    "minecraft": "1.18"
+  }
+}
